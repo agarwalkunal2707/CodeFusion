@@ -37,11 +37,15 @@ const Home = () => {
     return (
         <div className="homePageWrapper">
             <div className="formWrapper">
-                <img
+            <div className="display">
+            <img
                     className="homePageLogo"
                     src="/code-sync.png"
                     alt="swap-code-logo"
                 />
+                        <h2 className="homepagename">  CodeFusion</h2>
+                        </div>
+               
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
                 <div className="inputGroup">
                     <input
@@ -65,21 +69,21 @@ const Home = () => {
                     </button>
                     <span className="createInfo">
                         If you don't have an invite then create &nbsp;
-                        <button onClick={createNewRoom} href="" className="createNewBtn">
+                        <a onClick={createNewRoom} href="" className="createNewBtn">
                             new room
-                        </button>
+                        </a>
                     </span>
                 </div>
             </div>
             <footer>
                 <h4>
                     Built with ❤️&nbsp; by&nbsp;
-                    <a href="https://Swapnil-2503.github.io/Swapnil-2503">Swapnil Jadhav</a>
+                    <a href="https://github.com/agarwalkunal2707/CodeFusion">Kunal Agarwal</a>
                 </h4>
-                <h4>
+                {/* <h4>
                     Read more about this project&nbsp;
-                    <a href="https://Swapnil-2503.github.io/SwapCode">here</a>
-                </h4>
+                    <a href="https://github.com/agarwalkunal2707/CodeFusion">here</a>
+                </h4> */}
             </footer>
         </div>
     );
